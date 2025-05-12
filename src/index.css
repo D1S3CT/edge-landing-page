@@ -1,0 +1,22 @@
+@import 'tailwindcss';
+
+@font-face {
+  font-family: 'Prata';
+  src: url('/fonts/Prata-Regular.woff2') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1,
+h2 {
+  font-family: 'Prata', Arial, Helvetica, sans-serif;
+}
+
+span {
+  font-family: 'Prata', Arial, Helvetica, sans-serif;
+  font-size: 2.5rem;
+}
