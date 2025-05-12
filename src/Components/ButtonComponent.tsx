@@ -1,26 +1,8 @@
-type Style = {
-  bg: 'black' | 'white'
-  color: 'black' | 'white'
-  size: string
-  py: number
-  px: number
-  weight: boolean
-}
-
-const ButtonComponent: React.FC<Style> = ({
-  bg,
-  color,
-  size,
-  px,
-  py,
-  weight,
-}) => {
+const ButtonComponent: React.FC = () => {
   return (
     <div>
       <button
-        className={`p-2 bg-${bg} text-${color} text-${size} px-[${px}px] py-[${py}px] font-${
-          weight ? 'bold' : 'medium'
-        } mt-10 cursor-pointer rounded-[4px] w-[170px] h-[70px] max-w-[192px] max-h-[96px]`}
+        className={`p-2 bg-white text-black text-2xl px-[${40}px] py-[${20}px] font-bold mt-10 cursor-pointer rounded-[4px] w-[190px] h-[80px] max-w-[192px] max-h-[80px]`}
       >
         ORDER
       </button>
