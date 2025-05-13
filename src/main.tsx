@@ -3,7 +3,9 @@ import './index.css'
 import HeaderComponent from './Components/HeaderComponent'
 import TitleComponent from './Components/TitleComponent'
 import ButtonComponent from './Components/ButtonComponent'
-import Main from '../src/Img/main.png'
+import First from '../src/Img/first.jpg'
+import Second from '../src/Img/second.jpg'
+import Third from '../src/Img/third.jpg'
 import ServicesPanelComponent from './Components/ServicesPanelComponent'
 
 createRoot(document.getElementById('root')!).render(
@@ -12,15 +14,20 @@ createRoot(document.getElementById('root')!).render(
       <div className="w-full md:w-6/12 lg:w-5/12 xl:w-5/12 pt-10 pl-30">
         <HeaderComponent />
         <div className="mt-40">
-          <TitleComponent /> <ButtonComponent />
+          <TitleComponent /> <ButtonComponent type="Hero" />
         </div>
       </div>
       <div className="">
-        <img className="max-h-[991px]" src={Main} width={763} />
+        <img className="max-h-[991px]" src={First} width={763} />
       </div>
     </div>
-    <div className="flex justify-between ">
-      <ServicesPanelComponent />
+    <div className="flex items-center justify-between mt-25">
+      <img className="max-h-[724px]" src={Second} width={622} />
+      <div className="">
+        <ServicesPanelComponent />
+        <ButtonComponent type="Services" />
+      </div>
+      <img className="max-h-[724px]" src={Third} width={589} />
     </div>
   </div>
 )
