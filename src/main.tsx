@@ -8,6 +8,8 @@ import Second from '../src/Img/second.jpg'
 import Third from '../src/Img/third.jpg'
 import ServicesPanelComponent from './Components/ServicesPanelComponent'
 import ContactsComponent from './Components/ContactsComponent'
+import FooterTopComponent from "./Components/FooterTopComponent.tsx";
+import FooterBottomComponent from "./Components/FooterBottomComponent.tsx";
 
 createRoot(document.getElementById('root')!).render(
   <div className="bg-[#282829]">
@@ -30,6 +32,9 @@ createRoot(document.getElementById('root')!).render(
       </div>
       <img className="max-h-[724px]" src={Third} width={589} />
     </div>
-    <div><ContactsComponent/></div>
+    <ContactsComponent/>
+      <FooterTopComponent/>
+      <FooterBottomComponent/>
+
   </div>
 )
