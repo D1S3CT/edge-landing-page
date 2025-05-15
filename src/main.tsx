@@ -13,28 +13,36 @@ import FooterBottomComponent from "./Components/FooterBottomComponent.tsx";
 
 createRoot(document.getElementById('root')!).render(
   <div className="bg-[#282829]">
-    <div className="flex justify-between flex-wrap bg-[#222] text-white">
-      <div className="w-full md:w-6/12 lg:w-5/12 xl:w-5/12 pt-10 pl-30">
-        <HeaderComponent />
-        <div className="mt-40">
-          <TitleComponent /> <ButtonComponent type="Hero" />
+  <HeaderComponent />
+    <section id="Home">
+        <div className="flex justify-between flex-wrap bg-[#222] text-white">
+            <div className="w-full md:w-6/12 lg:w-5/12 xl:w-5/12 pt-10 pl-30">
+                <div className="mt-10">
+                    <TitleComponent /> <ButtonComponent type="Hero" />
+                </div>
+            </div>
+            <div className="">
+                <img className="max-h-[850px]" src={First} width={763} />
+            </div>
         </div>
-      </div>
-      <div className="">
-        <img className="max-h-[991px]" src={First} width={763} />
-      </div>
-    </div>
-    <div className="flex items-end justify-between mt-25">
-      <img className="max-h-[724px]" src={Second} width={622} />
-      <div className="">
-        <ServicesPanelComponent />
-        <ButtonComponent type="Services" />
-      </div>
-      <img className="max-h-[724px]" src={Third} width={589} />
-    </div>
-    <ContactsComponent/>
-      <FooterTopComponent/>
-      <FooterBottomComponent/>
-
+    </section>
+    <section id="Services">
+        <div className="flex items-end justify-between mt-25">
+            <img className="max-h-[724px]" src={Second} width={622} />
+            <div className="">
+                <ServicesPanelComponent />
+                <ButtonComponent type="Services" />
+            </div>
+            <img className="max-h-[724px]" src={Third} width={589} />
+        </div>
+    </section>
+    <section id="Contacts">
+        <ContactsComponent/>
+    </section>
+    <section id="Footer">
+          <FooterTopComponent/>
+          <FooterBottomComponent/>
+    </section>
   </div>
+
 )

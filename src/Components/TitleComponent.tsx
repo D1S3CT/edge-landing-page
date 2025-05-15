@@ -6,15 +6,15 @@ const TitleComponent = () => {
       <ul className="mt-[64px] text-[1.5rem]">
         <li className="flex gap-3 items-center">
           <img src="check.svg" alt="" />
-          <span>$10 000 </span> per month
+          <span className="span-numbers">$10 000 </span> per month
         </li>
         <li className="flex gap-3 items-center">
           <img src="check.svg" alt="" />
-          <span>30% </span> discount on your first order
+          <span className="span-numbers">30% </span> discount on your first order
         </li>
         <li className="flex gap-3 items-center">
           <img src="check.svg" alt="" />
-          <span>17% </span> quality guarantee
+          <span className="span-numbers">17% </span> quality guarantee
         </li>
       </ul>
     </div>
